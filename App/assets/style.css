@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(fuente/Anja\ Eliane.ttf);
+}
+
+html{
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: fuente1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+#filter-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Input de precio */
+.price-input {
+    margin-right: 10px;
+    flex: 1; /* El input ocupará todo el espacio disponible */
+}
+
+/* Estilos para el select */
+.category-select {
+    margin-left: 10px;
+    flex: 1; /* El select ocupará todo el espacio disponible */
+}
+
+select{
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+/* Productos */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 800px; /* Limita el ancho del producto */
+    width: 100%; /* El producto ocupará todo el ancho disponible */
+}
+
+/* Imagen del producto */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Título del producto */
+.product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #486be9;
+    text-align: center;
+}
+
+/* Precio del producto */
+.product p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+    text-align: center;
+}
+
+/* Mensaje de "No hay productos disponibles" */
+.no-products {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+
